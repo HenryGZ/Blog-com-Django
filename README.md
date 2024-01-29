@@ -1,0 +1,1 @@
+Blog feito em DJANGO, retirado do curso python-3-do-zero-ao-avançado de Luiz Otávio Miranda na udemy.com
