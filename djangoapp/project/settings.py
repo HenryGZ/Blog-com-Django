@@ -88,8 +88,8 @@ DATABASES = {
             'PORT': os.getenv('POSTGRES_PORT', 'change-me'),
     }
 }
-
-
+print(f'poha do usuário: {os.getenv("POSTGRES_USER")}')
+print(f'poha da senha: {os.getenv("POSTGRES_PASSWORD")}')
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -125,6 +125,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# /data/web/static
+STATIC_ROOT = DATA_DIR / 'static'
+
+MEDIA_URL = '/media/'
+# /data/web/media
+MEDIA_ROOT = DATA_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
